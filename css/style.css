@@ -1,0 +1,5 @@
+@import url(fonts.css);
+.footer__info__icons {
+  display: flex; }
+  .footer__info__icons__icon {
+    margin-right: 5px; }
