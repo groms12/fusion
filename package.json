@@ -1,0 +1,27 @@
+{
+  "name": "fusion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/groms12/fusion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/groms12/fusion/issues"
+  },
+  "homepage": "https://github.com/groms12/fusion#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "browser-sync": "^2.26.12",
+    "g": "^2.0.1"
+  }
+}
