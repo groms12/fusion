@@ -1,5 +1,36 @@
-@import url(fonts.css);
-.footer__info__icons {
-  display: flex; }
-  .footer__info__icons__icon {
-    margin-right: 5px; }
+.container {
+  width: 80%; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #353535;
+  font-family: 'Open Sans', sans-serif; }
+  .footer__img {
+    margin-top: 30px; }
+  .footer__info__tel {
+    line-height: 27px; }
+  .footer__info__icons {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -10px; }
+    .footer__info__icons__icon {
+      margin-right: 5px; }
+
+.subtitle {
+  color: #bababa;
+  font-size: 14px;
+  font-weight: 400; }
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: uppercase; }
+
+.tel {
+  text-decoration: none;
+  font-size: 14px;
+  color: #bababa;
+  line-height: 27px; }
