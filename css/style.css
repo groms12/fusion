@@ -251,12 +251,79 @@
         font-weight: 400;
         margin-top: 5px; }
 
+.contact_us {
+  background-color: #353535;
+  padding-bottom: 100px; }
+  .contact_us::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 126px;
+    background-color: #f7ac53;
+    margin: auto; }
+  .contact_us__form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 751px;
+    height: 601px;
+    margin: auto;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #181818;
+    position: relative; }
+    .contact_us__form__input {
+      border: none;
+      border-bottom: 1px solid #404040;
+      width: 275px;
+      background-color: #181818; }
+      .contact_us__form__input--active {
+        border-bottom: 1px solid #f7ac53; }
+      .contact_us__form__input__label {
+        display: block;
+        opacity: 0;
+        color: #f7ac53;
+        font-family: "Open Sans", serif;
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 10px; }
+        .contact_us__form__input__label--active {
+          opacity: 1; }
+      .contact_us__form__input__message {
+        width: 630px; }
+    .contact_us__form__btn {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      width: 220px;
+      height: 60px;
+      background-color: #f7ac53;
+      outline: none;
+      border: none;
+      color: #232323;
+      font-family: "Open Sans", serif;
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: uppercase; }
+      .contact_us__form__btn:hover {
+        cursor: pointer;
+        box-shadow: 1px 2px 3px #404040;
+        color: #FFF; }
+
+input[placeholder] {
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 10px; }
+
 .footer {
   display: flex;
   justify-content: space-around;
   background-color: #353535;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 200px; }
+  font-family: 'Open Sans', sans-serif; }
   .footer__img {
     margin-top: 30px; }
   .footer__info__tel {

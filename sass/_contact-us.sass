@@ -1,0 +1,69 @@
+.contact
+    &_us
+        background-color: $bg-light
+        padding-bottom: 100px
+        &::before
+            content: ''
+            display: block
+            width: 2px
+            height: 126px
+            background-color: $yellow
+            margin: auto
+        &__form
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            width: 751px
+            height: 601px
+            margin: auto
+            box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3)
+            background-color: $bg
+            position: relative
+            &__input
+                border: none
+                border-bottom: 1px solid #404040
+                width: 275px
+                background-color: $bg
+                &--active
+                    border-bottom: 1px solid $yellow
+                &__label
+                    display: block
+                    opacity: 0
+                    color: $yellow
+                    font-family: "Open Sans", serif
+                    font-size: 11px
+                    font-weight: 400
+                    text-transform: uppercase
+                    margin-top: 50px
+                    margin-bottom: 10px
+                    &--active
+                        opacity: 1
+                &__message
+                    width: 630px
+            &__btn
+                display: block
+                position: absolute
+                bottom: 20px
+                width: 220px
+                height: 60px
+                background-color: $yellow
+                outline: none
+                border: none
+                color: #232323
+                font-family: "Open Sans", serif
+                font-size: 17px
+                font-weight: 600
+                text-transform: uppercase
+                &:hover
+                    cursor: pointer
+                    box-shadow: 1px 2px 3px #404040  
+                    color: $white                
+input[placeholder]
+    text-transform: uppercase
+    color: $white
+    font-family: "Open Sans", serif
+    font-size: 14px
+    font-weight: 400
+    padding-bottom: 10px
+
+
