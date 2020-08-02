@@ -1,0 +1,59 @@
+.services
+    background-color: $bg-light
+    &::before
+        content: ''
+        display: block
+        width: 2px
+        height: 126px
+        background-color: $yellow
+        margin: auto
+    &__subtitle
+        color: $yellow
+        font-family: "Open Sans"
+        font-size: 14px
+        font-weight: 600
+        line-height: 40px
+        text-transform: uppercase
+        text-align: center
+    &__title
+        max-width: 648px
+        color: $white        
+        font-family: 'Merriweather', serif
+        font-size: 40px
+        font-weight: 400
+        line-height: 65px
+        text-align: center
+        margin: auto
+        margin-bottom: 116px
+    &__info
+        display: flex
+        justify-content: space-around
+        opacity: 0
+        &--active
+            opacity: 1
+        &__text
+            &__title
+                color: $white
+                font-family: 'Merriweather', serif
+                font-size: 30px
+                font-weight: 400
+                line-height: 65px
+                margin-top: 36px
+            &__p
+                max-width: 223px
+                color: #bbbbbb
+                font-family: "Open Sans"
+                font-size: 14px
+                font-weight: 400
+                line-height: 27px
+                margin-top: 24px
+            &__span
+                color: $white
+                font-family: "Open Sans"
+                font-size: 14px
+                font-weight: 600
+                line-height: 28px
+                text-transform: uppercase
+                margin-top: 32px
+                display: inline-block
+                margin-bottom: 150px

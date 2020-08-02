@@ -21,7 +21,7 @@
   .header__href__text {
     height: 11px;
     color: #ffffff;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 40px;
@@ -68,11 +68,71 @@
   justify-content: space-around;
   margin-top: 65px; }
 
+.services {
+  background-color: #353535; }
+  .services::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 126px;
+    background-color: #f7ac53;
+    margin: auto; }
+  .services__subtitle {
+    color: #f7ac53;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center; }
+  .services__title {
+    max-width: 648px;
+    color: #FFF;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 65px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 116px; }
+  .services__info {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0; }
+    .services__info--active {
+      opacity: 1; }
+    .services__info__text__title {
+      color: #FFF;
+      font-family: 'Merriweather', serif;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 65px;
+      margin-top: 36px; }
+    .services__info__text__p {
+      max-width: 223px;
+      color: #bbbbbb;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: 24px; }
+    .services__info__text__span {
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 28px;
+      text-transform: uppercase;
+      margin-top: 32px;
+      display: inline-block;
+      margin-bottom: 150px; }
+
 .footer {
   display: flex;
   justify-content: space-around;
   background-color: #353535;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 200px; }
   .footer__img {
     margin-top: 30px; }
   .footer__info__tel {
