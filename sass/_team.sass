@@ -1,0 +1,42 @@
+.team
+    background-color: $bg
+    padding-bottom: 100px
+    &::before
+        content: ''
+        display: block
+        width: 2px
+        height: 126px
+        background-color: $yellow
+        margin: auto
+    &__persons
+        margin: auto
+        border-collapse: collapse
+        &__person
+            border-right: 1px solid #404040
+            border-bottom: 1px solid #404040
+            padding: 50px 70px
+            text-align: center
+            &:hover
+                cursor: pointer
+            &:last-child
+                border-right: none
+            &-2
+                border-bottom: none
+            &__img
+                width: 120px
+                height: 121px
+                border-radius: 100px
+                object-fit: cover // вписываем картинку в область
+            &__name
+                color: $yellow
+                font-family: "Open Sans" , serif
+                font-size: 14px
+                font-weight: 600
+                text-transform: uppercase
+                margin-top: 25px
+            &__company
+                color: $white
+                font-family: "Open Sans", serif
+                font-size: 13px
+                font-weight: 400
+                margin-top: 5px
