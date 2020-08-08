@@ -3,6 +3,7 @@
     padding-top: 150px
     padding-bottom: 50px
     &__href
+        pointer-events: none
         &::before
             content: ''
             margin: auto
@@ -13,6 +14,8 @@
             border-bottom: 1px solid $yellow    
             transform: rotate(45deg)
             margin-top: 100px
+            cursor: pointer
+            pointer-events: all
         &__img
             margin-left: 10px
         &__text

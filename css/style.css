@@ -6,26 +6,30 @@
   background: url("../img/Homepage/background.jpg") no-repeat center;
   padding-top: 150px;
   padding-bottom: 50px; }
-  .header__href::before {
-    content: '';
-    margin: auto;
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-right: 1px solid #f7ac53;
-    border-bottom: 1px solid #f7ac53;
-    transform: rotate(45deg);
-    margin-top: 100px; }
-  .header__href__img {
-    margin-left: 10px; }
-  .header__href__text {
-    height: 11px;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 40px;
-    text-transform: uppercase; }
+  .header__href {
+    pointer-events: none; }
+    .header__href::before {
+      content: '';
+      margin: auto;
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-right: 1px solid #f7ac53;
+      border-bottom: 1px solid #f7ac53;
+      transform: rotate(45deg);
+      margin-top: 100px;
+      cursor: pointer;
+      pointer-events: all; }
+    .header__href__img {
+      margin-left: 10px; }
+    .header__href__text {
+      height: 11px;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 40px;
+      text-transform: uppercase; }
   .header__title {
     text-align: center;
     margin: auto;
@@ -359,3 +363,32 @@ input[placeholder] {
   font-size: 14px;
   color: #bababa;
   line-height: 27px; }
+
+.scroll-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3.57rem;
+  right: 2rem;
+  width: 3.57rem;
+  height: 3.57rem;
+  border-radius: 50%;
+  border: 2px solid #f7ac53;
+  background-color: transperent;
+  z-index: 1000;
+  outline: none;
+  display: none; }
+  .scroll-top:hover {
+    background-color: rgba(247, 172, 83, 0.2); }
+  .scroll-top::after {
+    content: '';
+    width: 0.714rem;
+    height: 0.714rem;
+    border-top: 2px solid #f7ac53;
+    border-left: 2px solid #f7ac53;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.286rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
