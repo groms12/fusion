@@ -1,10 +1,18 @@
 $(document).ready(function(){
-    $(".header__href").click(function (event) {
+    $(".header__href").click(function () {
         $('body, html').animate({scrollTop: $("header").height()+ 300}, 1500);
     });
 
+    $(".header__text__span").click(function () {
+        $('body, html').animate({scrollTop: $("header").height()+ 600}, 1500);
+    });
+
+    $(".mod").click(function () {
+        $('body, html').animate({scrollTop: $("header").height()+ 1000}, 1500);
+    });
+
     $(document).scroll(function(){  //функция прокрутки страницы наверх
-        if($(document).scrollTop() > 70) {
+        if($(document).scrollTop() > 300) {
             $('.scroll-top').show();
         } else {
             $('.scroll-top').hide();
