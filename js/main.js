@@ -1,14 +1,15 @@
 $(document).ready(function(){
+    
     $(".header__href").click(function () {
         $('body, html').animate({scrollTop: $("header").height()+ 300}, 1500);
     });
 
     $(".header__text__span").click(function () {
-        $('body, html').animate({scrollTop: $("header").height()+ 600}, 1500);
+        $('body, html').animate({scrollTop: $("header").height()+ 500}, 1500);
     });
 
     $(".mod").click(function () {
-        $('body, html').animate({scrollTop: $("header").height()+ 1000}, 1500);
+        $('body, html').animate({scrollTop: $("header").height()+ 3550}, 1500);
     });
 
     $(document).scroll(function(){  //функция прокрутки страницы наверх
@@ -23,7 +24,6 @@ $(document).ready(function(){
     $('.scroll-top').click(function(){
         $('html').animate({scrollTop: 0}, 1000);
         $('body').animate({scrollTop: 0}, 1000);
-        // console.log($('body').scrollTop);
         return false;
     });
 

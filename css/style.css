@@ -19,6 +19,7 @@
       border-bottom: 1px solid #f7ac53;
       transform: rotate(45deg);
       margin-top: 100px;
+      cursor: pointer;
       pointer-events: all; }
     .header__href__span {
       display: flex;
@@ -35,7 +36,8 @@
         font-weight: 500;
         line-height: 40px;
         text-transform: uppercase;
-        cursor: pointer; }
+        cursor: pointer;
+        pointer-events: all; }
   .header__title {
     text-align: center;
     margin: auto;
