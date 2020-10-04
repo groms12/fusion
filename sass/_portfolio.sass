@@ -1,0 +1,125 @@
+.portfolio
+    background-color: $bg
+    position: relative
+    padding-top: 80px
+    padding-bottom: 80px
+    &__project
+        position: relative
+        background-color: #202020
+        display: flex
+        justify-content: space-between
+        &--nonactive
+            display: none
+        &__back
+            &__text
+                color: $white
+                font-family: 'Merriweather', serif
+                font-size: 12px
+                font-weight: 600
+                text-transform: uppercase
+                cursor: pointer
+                position: absolute
+                margin-left: 10px
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            border-top: 3px solid $yellow    
+            border-left: 3px solid $yellow  
+            width: 100px
+            height: 100px  
+        &__info
+            margin-left: 40px
+            &__span
+                display: inline-block
+                width: 2px
+                height: 10px
+                margin-left: 8px
+                margin-right: 8px
+                background-color: #fff
+            &__title, &__subtitle
+                text-align: left
+                margin-bottom: 15px
+            &__title
+                margin-top: 20px
+    &-1
+        &--nonactive
+            display: none
+    &__back
+        color: $white
+        font-family: 'Merriweather', serif
+        font-size: 14px
+        font-weight: 600
+        text-transform: uppercase
+        cursor: pointer
+        position: absolute
+        left: 18rem
+        &--nonactive
+            display: none
+    &__info
+        position: absolute
+        right: 12rem
+        bottom: 4rem
+        &--nonactive
+            display: none
+        &::after
+            content: ''
+            display: block
+            width: 2px
+            height: 100px
+            background-color: $yellow
+        &__details, &__slides
+            &__text
+                color: $white
+                font-family: 'Open Sans', serif
+                font-size: 16px
+                font-weight: 600
+                line-height: 40px
+                cursor: pointer
+    &__img
+        max-width: 800px
+        max-height: 600px
+    &__text
+        position: relative
+        z-index: 5
+        &--nonactive
+            display: none
+        &__title
+            position: absolute
+            left: 5rem
+            top: 6rem
+        &__subtitle
+            position: absolute
+            top: -2rem
+            left: 5rem
+            &::before
+                content: ''
+                display: block
+                width: 2px
+                height: 100px
+                background-color: $yellow
+.swiper__pagination__img 
+    display: inline-block
+    width: 2rem
+    border-radius: 5px
+    height: 3px
+    background-color: $text
+    margin-right: 0.3rem
+.swiper__pagination__img:hover 
+    background-color: $white
+.swiper__pagination__img--active 
+    background-color: #f6ac53
+.swiper-container-s1
+    max-width: 800px
+    &--before
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0px
+            background-color: rgba(0, 0, 0, 0.5)
+            width: 50rem
+            height: 33.35rem
+            z-index: 7
