@@ -3,20 +3,32 @@
     padding-top: 150px
     padding-bottom: 50px
     &__href
-        pointer-events: none
-        &::before
-            content: ''
+        position: relative
+        // pointer-events: none
+        // &::before
+        //     content: ''
+        //     margin: auto
+        //     display: inline-block
+        //     margin-left: 50%
+        //     width: 15px
+        //     height: 15px
+        //     border-right: 1px solid $yellow    
+        //     border-bottom: 1px solid $yellow    
+        //     transform: rotate(45deg)
+        //     margin-top: 100px
+        //     cursor: pointer
+        //     pointer-events: all
+        &__img
             margin: auto
-            display: inline-block
-            margin-left: 50%
-            width: 15px
-            height: 15px
-            border-right: 1px solid $yellow    
-            border-bottom: 1px solid $yellow    
-            transform: rotate(45deg)
-            margin-top: 100px
+            margin-top: 50px
+            margin-bottom: 50px
+            width: 35px
+            height: 35px
+            display: flex
             cursor: pointer
-            pointer-events: all
+            &-1
+                height: 13px
+                margin-left: 10px
         &__span
             display: flex
             align-items: center
@@ -24,6 +36,9 @@
             margin-top: 65px
             &__img
                 margin-left: 10px
+                height: 13px
+                &-1
+                    height: 30px
             &__text
                 height: 11px
                 color: #ffffff

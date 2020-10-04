@@ -1,15 +1,15 @@
 $(document).ready(function(){
     
-    $(".header__href").click(function () {
-        $('body, html').animate({scrollTop: $("header").height()+ 300}, 1500);
-    });
-
     $(".header__text__span").click(function () {
         $('body, html').animate({scrollTop: $("header").height()+ 500}, 1500);
     });
 
     $(".mod").click(function () {
-        $('body, html').animate({scrollTop: $("header").height()+ 3550}, 1500);
+        $('body, html').animate({scrollTop: $("header").height()+ 3750}, 1500);
+    });
+ 
+    $(".header__href__img").click(function () {
+        $('body, html').animate({scrollTop: $("header").height()+ 300}, 1500);
     });
 
     $(document).scroll(function(){  //функция прокрутки страницы наверх
