@@ -12,6 +12,26 @@ $(document).ready(function(){
         $('body, html').animate({scrollTop: $("header").height()+ 300}, 1500);
     });
 
+    $(".services__info__text__span").click(function () {
+        $(".service").addClass("services--nonactive");
+        $(".open-service").removeClass("services--nonactive");
+    });
+
+    $(".services__info__text__span__strategy").click(function () {
+        $(".open-services-2__text").text("Strategy.");
+    });
+    $(".services__info__text__span__branding").click(function () {
+        $(".open-services-2__text").text("Branding.");
+    });
+    $(".services__info__text__span__design").click(function () {
+        $(".open-services-2__text").text("Design.");
+    });
+    
+    $(".open-services__back").click(function () {
+        $(".service").removeClass("services--nonactive");
+        $(".open-service").addClass("services--nonactive");
+    });
+
     $(document).scroll(function(){  //функция прокрутки страницы наверх
         if($(document).scrollTop() > 300) {
             $('.scroll-top').show();

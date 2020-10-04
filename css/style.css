@@ -77,7 +77,10 @@
         display: none; }
 
 .services {
-  background-color: #353535; }
+  background-color: #353535;
+  position: relative; }
+  .services--nonactive {
+    display: none; }
   .services::before {
     content: '';
     display: block;
@@ -124,6 +127,9 @@
       font-weight: 400;
       line-height: 27px;
       margin-top: 24px; }
+      .services__info__text__p-1 {
+        max-width: 500px;
+        margin-bottom: 55px; }
     .services__info__text__span {
       color: #FFF;
       font-family: "Open Sans", sans-serif;
@@ -135,6 +141,72 @@
       display: inline-block;
       margin-bottom: 150px;
       cursor: pointer; }
+
+.open-services {
+  display: flex;
+  justify-content: space-between; }
+  .open-services-2 {
+    position: relative;
+    margin-top: -6rem; }
+    .open-services-2__text {
+      position: absolute;
+      right: 0;
+      top: 8rem;
+      width: 200px;
+      background-color: #FFF;
+      color: black;
+      font-family: 'Merriweather', serif;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 65px;
+      text-align: center; }
+  .open-services__back {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    background-color: transperent;
+    z-index: 1000;
+    outline: none;
+    z-index: 100; }
+    .open-services__back:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+    .open-services__back::after {
+      content: '';
+      width: 0.8rem;
+      height: 0.8rem;
+      border-bottom: 3px solid #FFF;
+      border-left: 3px solid #FFF;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0.1rem;
+      bottom: 0;
+      left: 0.286rem;
+      right: 0;
+      margin: auto; }
+  .open-services-1 {
+    margin-left: 4%; }
+  .open-services__btn {
+    position: relative !important; }
+  .open-services__icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 90px; }
+    .open-services__icons__block {
+      width: 50%; }
+    .open-services__icons__text {
+      height: 11px;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 40px;
+      text-transform: uppercase; }
 
 .testimonials {
   background-color: #353535;

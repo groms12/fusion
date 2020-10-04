@@ -1,5 +1,8 @@
 .services
     background-color: $bg-light
+    position: relative
+    &--nonactive
+        display: none
     &::before
         content: ''
         display: block
@@ -47,6 +50,9 @@
                 font-weight: 400
                 line-height: 27px
                 margin-top: 24px
+                &-1
+                    max-width: 500px
+                    margin-bottom: 55px
             &__span
                 color: $white
                 font-family: "Open Sans", sans-serif
